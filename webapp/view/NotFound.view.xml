@@ -1,0 +1,9 @@
+<mvc:View
+   controllerName="Rout_Samp.Rout_Samp.controller.NotFound"
+   xmlns="sap.m"
+   xmlns:mvc="sap.ui.core.mvc">
+   <MessagePage
+      title="Not Found"
+      text="Not Found"
+      description="Page Not Found"/>
+</mvc:View>

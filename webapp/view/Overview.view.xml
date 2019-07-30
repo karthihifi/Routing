@@ -1,0 +1,36 @@
+<mvc:View controllerName="Rout_Samp.Rout_Samp.controller.App" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m">
+	<Page id="page" title="{i18n>title}">
+		<content>
+			<Table id="Products" alternateRowColors="true" items="{/Customers}" growing="true" growingThreshold="5">
+				<headerToolbar>
+					<Toolbar>
+						<Title text="Customers" level="H2"/>
+						<Button icon="sap-icon://sort" press=".handleFilterButtonPressed"/>
+					</Toolbar>
+				</headerToolbar>
+				<columns>
+					<Column>
+						<Text text="CustomerID"/>
+					</Column>
+					<Column>
+						<Text text="CompanyName"/>
+					</Column>
+					<Column>
+						<Text text="ContactName"/>
+					</Column>
+					<Column>
+						<Text text="ContactTitle"/>
+					</Column>
+				</columns>
+				<items>
+					<ColumnListItem type="Navigation" press=".NavToDetail">
+						<Text text="{CustomerID}"/>
+						<Text text="{CompanyName}"/>
+						<Text text="{ContactName}"/>
+						<Text text="{ContactTitle}"/>
+					</ColumnListItem>
+				</items>
+			</Table>
+		</content>
+	</Page>
+</mvc:View>

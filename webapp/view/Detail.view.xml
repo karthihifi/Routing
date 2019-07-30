@@ -1,0 +1,8 @@
+<mvc:View controllerName="Rout_Samp.Rout_Samp.controller.Detail" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m">
+	<Page id="page" title="Customer" showNavButton="true" navButtonPress=".onNavBack">
+		<Toolbar>
+			<Link text="FlipToAddress" tooltip="Address" press=".onShowAddr"/>
+		</Toolbar>
+		<ObjectHeader intro="{CustomerID}" title="{CompanyName}"/>
+	</Page>
+</mvc:View>

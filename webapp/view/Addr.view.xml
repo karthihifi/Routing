@@ -1,0 +1,24 @@
+<mvc:View controllerName="Rout_Samp.Rout_Samp.controller.Addr" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m"
+	xmlns:f="sap.ui.layout.form">
+	<Page id="page" title="Customer" showNavButton="true" navButtonPress=".onNavBack">
+		<Panel>
+			<f:SimpleForm editable="false" layout="ResponsiveGridLayout" labelSpanL="3" labelSpanM="3" emptySpanL="4" emptySpanM="4" columnsL="1"
+				columnsM="1">
+				<f:content>
+					<Label text="Address"/>
+					<Text text="{Address}"/>
+					<Label text="City"/>
+					<Text text="{City}"/>
+					<Label text="Region"/>
+					<Text text="{Region}"/>
+					<Label text="PostalCode"/>
+					<Text text="{PostalCode}"/>
+					<Label text="Country"/>
+					<Text text="{Country}"/>
+					<Label text="Phone"/>
+					<Text text="{Phone}"/>
+				</f:content>
+			</f:SimpleForm>
+		</Panel>
+	</Page>
+</mvc:View>
